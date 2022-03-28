@@ -253,7 +253,7 @@
                       "displayName": "Table",
                       "iconSVG": "/static/media/icon.db8a9cbd.svg",
                       "topRow": 1,
-                      "bottomRow": 32,
+                      "bottomRow": 73,
                       "isSortable": true,
                       "parentRowSpace": 10,
                       "type": "TABLE_WIDGET",
