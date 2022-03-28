@@ -2,13 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "jsonplaceholder",
+    "name": "instances_data",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "https://jsonplaceholder.typicode.com"
+        "url": "https://instances.vantage.sh"
       },
       "invalids": [],
       "messages": [],
@@ -17,11 +16,11 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Dashboard",
+    "pageId": "GitNews",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/posts/1",
+      "path": "/instances.json",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
@@ -46,7 +45,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Dashboard_jsonplaceholder",
+  "id": "GitNews_instances_data",
   "deleted": false,
-  "gitSyncId": "623a4a5a4670782ce29f0567_623a4af34670782ce29f0572"
+  "gitSyncId": "623a4a5a4670782ce29f0567_623e2440750328517b3c1aa4"
 }

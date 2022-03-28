@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Tabs_Helper",
+    "pageId": "GitNews",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tswitchTab: (tabId) => {\n\t\tstoreValue('framework_active_tab', `Tab ${tabId}`);\n\t},\n\tgetActiveTab: () => appsmith.store.framework_active_tab ?? \"Tab 1\",\n}",
+    "variables": []
+  },
+  "id": "GitNews_Tabs_Helper",
+  "deleted": false,
+  "gitSyncId": "623a4a5a4670782ce29f0567_623cc1e1b74bd2250a6ce069"
+}

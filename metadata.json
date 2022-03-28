@@ -2,14 +2,30 @@
   "fileFormatVersion": 1,
   "clientSchemaVersion": 1,
   "serverSchemaVersion": 2,
-  "publishedDefaultPageName": "Dashboard",
-  "unpublishedDefaultPageName": "Dashboard",
+  "publishedDefaultPageName": "GitNews",
+  "unpublishedDefaultPageName": "GitNews",
   "invisibleActionFields": {
+    "GitNews_json_server": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "GitNews_aws_spot_data": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "GitNews_gitnews_api": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Dashboard_jsonplaceholder": {
+    "GitNews_switchTab": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "GitNews_getActiveTab": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "GitNews_instances_data": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     }
