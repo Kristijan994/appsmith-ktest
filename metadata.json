@@ -5,11 +5,7 @@
   "publishedDefaultPageName": "GitNews",
   "unpublishedDefaultPageName": "GitNews",
   "invisibleActionFields": {
-    "GitNews_json_server": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
-    "GitNews_aws_spot_data": {
+    "GitNews_aws_instance_prefixes": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
@@ -25,7 +21,15 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "GitNews_instances_data": {
+    "GitNews_aws_instance_types": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "GitNews_gex_aws_instance_type": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "GitNews_gex_aws_instance_prefix": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     }

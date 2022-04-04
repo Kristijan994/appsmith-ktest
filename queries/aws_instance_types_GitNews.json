@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "instances_data",
+    "name": "aws_instance_types",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://instances.vantage.sh"
+        "url": "https://aws-instance-types.herokuapp.com"
       },
       "invalids": [],
       "messages": [],
@@ -20,10 +20,16 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/instances.json",
-      "headers": [],
+      "path": "/instance_types",
+      "headers": [
+        {
+          "key": "content-type",
+          "value": "application/json"
+        }
+      ],
       "encodeParamsToggle": true,
       "queryParameters": [],
+      "body": "",
       "httpMethod": "GET",
       "pluginSpecifiedTemplates": [
         {
@@ -31,10 +37,10 @@
         }
       ],
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -45,7 +51,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "GitNews_instances_data",
+  "id": "GitNews_aws_instance_types",
   "deleted": false,
-  "gitSyncId": "623a4a5a4670782ce29f0567_623e2440750328517b3c1aa4"
+  "gitSyncId": "623a4a5a4670782ce29f0567_623a4af34670782ce29f0572"
 }
