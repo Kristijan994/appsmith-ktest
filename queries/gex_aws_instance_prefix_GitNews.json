@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n  \"instance_prefix\": {{instance_prefixed_dd_multi.selectedOptionValues}}\n}",
+      "body": "{\n  \"instance_prefix\": {{\ninstance_prefixed_dd_multi.selectedOptionValues.length > 0 ? instance_prefixed_dd_multi.selectedOptionValues : 'unknown_instance'}}\n}",
       "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
         {
@@ -40,7 +40,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -50,7 +50,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "instance_prefixed_dd_multi.selectedOptionValues"
+      "instance_prefixed_dd_multi.selectedOptionValues.length > 0 ? instance_prefixed_dd_multi.selectedOptionValues : 'unknown_instance'"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

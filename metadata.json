@@ -17,6 +17,10 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
+    "GitNews_transform_Price_MIN_API": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "GitNews_getActiveTab": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
@@ -25,11 +29,23 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
+    "GitNews_transform_RAM_API": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "GitNews_gex_aws_instance_type": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
+    "GitNews_transform_vCPU_API": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "GitNews_gex_aws_instance_prefix": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "GitNews_transform_Price_MAX_API": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     }
