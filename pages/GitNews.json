@@ -708,7 +708,7 @@
                         },
                         "fp3k5jx9ry": {
                           "seriesName": "Spot MAX",
-                          "data": "{{transformHandlers.transform_Price_MAX_API(spot_max_currency_input.value)}}"
+                          "data": "{{transformHandlers.transform_Price_MAX_API()}}"
                         }
                       },
                       "animateLoading": true,
@@ -808,7 +808,7 @@
                       "labelStyle": "",
                       "isDisabled": false,
                       "key": "60ec204qip",
-                      "isRequired": false,
+                      "isRequired": true,
                       "rightColumn": 28,
                       "widgetId": "e0kulddki0",
                       "isVisible": true,
