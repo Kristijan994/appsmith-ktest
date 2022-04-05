@@ -742,9 +742,9 @@
                       "labelOrientation": "auto",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "yAxisName": "Revenue($)",
+                      "yAxisName": "vCPU - RAM - SPOT MIN - SPOT MAX",
                       "chartName": "Instance Types Data for US-EAST-1 (N. Virginia)",
-                      "xAxisName": "Product Line",
+                      "xAxisName": "Instance Type",
                       "chartType": "LINE_CHART"
                     },
                     {
