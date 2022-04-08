@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "https://aws-instance-types.herokuapp.com"
+        "url": "https://geai-aws-instances.herokuapp.com"
       },
       "invalids": [],
       "messages": [],

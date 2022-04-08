@@ -39,7 +39,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "GitNews_getActiveTab",
+  "id": "GitNews_Tabs_Helper.getActiveTab",
   "deleted": false,
   "gitSyncId": "623a4a5a4670782ce29f0567_623cc23eb74bd2250a6ce06c"
 }

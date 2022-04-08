@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "aws_instance_prefixes",
+    "name": "aws_instance_regions",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/instance_prefixes",
+      "path": "/regions",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
@@ -45,7 +45,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "GitNews_aws_instance_prefixes",
+  "id": "GitNews_aws_instance_regions",
   "deleted": false,
-  "gitSyncId": "623a4a5a4670782ce29f0567_624a599210187e0349bafbb1"
+  "gitSyncId": "623a4a5a4670782ce29f0567_624f78c2f3aded42faf487fc"
 }

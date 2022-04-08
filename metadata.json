@@ -1,27 +1,23 @@
 {
   "fileFormatVersion": 1,
   "clientSchemaVersion": 1,
-  "serverSchemaVersion": 2,
+  "serverSchemaVersion": 3,
   "publishedDefaultPageName": "GitNews",
   "unpublishedDefaultPageName": "GitNews",
   "invisibleActionFields": {
+    "GitNews_Tabs_Helper.getActiveTab": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "GitNews_Tabs_Helper.switchTab": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "GitNews_aws_instance_prefixes": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "GitNews_gitnews_api": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
-    "GitNews_switchTab": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
-    "GitNews_transform_Price_MIN_API": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
-    "GitNews_getActiveTab": {
+    "GitNews_aws_instance_regions": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
@@ -29,7 +25,7 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "GitNews_transform_RAM_API": {
+    "GitNews_gex_aws_instance_prefix": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
@@ -37,46 +33,38 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "GitNews_transform_vCPU_API": {
+    "GitNews_gitnews_api": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "GitNews_gex_aws_instance_prefix": {
+    "GitNews_transformHandlers.transform_Price_MAX_API": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "GitNews_transform_Price_MAX_API": {
+    "GitNews_transformHandlers.transform_Price_MIN_API": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "GitNews_transformHandlers.transform_RAM_API": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "GitNews_transformHandlers.transform_vCPU_API": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     }
   },
   "editModeTheme": {
     "name": "Classic",
+    "displayName": "Classic",
     "isSystemTheme": true,
-    "deleted": false,
-    "policies": [
-      {
-        "permission": "read:themes",
-        "users": [
-          "anonymousUser"
-        ],
-        "groups": []
-      }
-    ]
+    "deleted": false
   },
   "publishedTheme": {
     "name": "Classic",
+    "displayName": "Classic",
     "isSystemTheme": true,
-    "deleted": false,
-    "policies": [
-      {
-        "permission": "read:themes",
-        "users": [
-          "anonymousUser"
-        ],
-        "groups": []
-      }
-    ]
+    "deleted": false
   },
   "publishedLayoutmongoEscapedWidgets": {},
   "unpublishedLayoutmongoEscapedWidgets": {}

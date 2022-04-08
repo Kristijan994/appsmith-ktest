@@ -40,7 +40,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "GitNews_transform_RAM_API",
+  "id": "GitNews_transformHandlers.transform_RAM_API",
   "deleted": false,
   "gitSyncId": "623a4a5a4670782ce29f0567_624b8bde77946975680b946c"
 }
