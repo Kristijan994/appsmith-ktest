@@ -647,6 +647,77 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "widgetName": "InstanceTypesCopy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 69,
+                      "bottomRow": 73,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 16.3017578125,
+                      "dynamicTriggerPathList": [],
+                      "overflow": "NONE",
+                      "leftColumn": 36,
+                      "dynamicBindingPathList": [],
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Select Instance Constraints:",
+                      "key": "f2pd23tkcj",
+                      "rightColumn": 52,
+                      "textAlign": "LEFT",
+                      "widgetId": "9snmfz0ofb",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "vv2eulqz0i",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "fontSize": "PARAGRAPH"
+                    },
+                    {
+                      "widgetName": "instance_constraints_dd_multi",
+                      "displayName": "Multi TreeSelect",
+                      "iconSVG": "/static/media/icon.b3e28afb.svg",
+                      "labelText": "",
+                      "topRow": 74,
+                      "bottomRow": 78,
+                      "parentRowSpace": 10,
+                      "type": "MULTI_SELECT_TREE_WIDGET",
+                      "hideCard": false,
+                      "mode": "SHOW_ALL",
+                      "defaultOptionValue": "g4dn",
+                      "animateLoading": true,
+                      "parentColumnSpace": 16.3017578125,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 36,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "options"
+                        }
+                      ],
+                      "options": "{{aws_instance_constraints.data.map((item) => (\n\t\t{\n    \t\"label\": item,\n    \t\"value\": item\n  \t}\n))}}",
+                      "placeholderText": "Select option(s)",
+                      "isDisabled": false,
+                      "key": "yo6zrpu8nd",
+                      "isRequired": false,
+                      "rightColumn": 52,
+                      "widgetId": "gk9gfsnxcz",
+                      "isVisible": true,
+                      "version": 1,
+                      "expandAll": false,
+                      "parentId": "vv2eulqz0i",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "onOptionChange": "{{gex_aws_instance_prefix.run()}}",
+                      "allowClear": false
+                    },
+                    {
                       "widgetName": "instance_regions_dd_multi",
                       "displayName": "Multi TreeSelect",
                       "iconSVG": "/static/media/icon.b3e28afb.svg",
@@ -730,12 +801,12 @@
                       "parentColumnSpace": 16.3017578125,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
-                      "leftColumn": 36,
+                      "leftColumn": 52,
                       "dynamicBindingPathList": [],
                       "truncateButtonColor": "#FFC13D",
                       "text": "Maximum Price:",
                       "key": "f2pd23tkcj",
-                      "rightColumn": 46,
+                      "rightColumn": 62,
                       "textAlign": "LEFT",
                       "widgetId": "iqktnkv3jl",
                       "isVisible": true,
@@ -779,6 +850,10 @@
                         "fp3k5jx9ry": {
                           "seriesName": "Spot MAX",
                           "data": "{{transformHandlers.transform_Price_MAX_API()}}"
+                        },
+                        "g7oco2i5hu": {
+                          "seriesName": "Interruption Rate",
+                          "data": "{{transformHandlers.transform_Interruption_Rate_API()}}"
                         }
                       },
                       "animateLoading": true,
@@ -803,6 +878,9 @@
                         },
                         {
                           "key": "chartName"
+                        },
+                        {
+                          "key": "chartData.g7oco2i5hu.data"
                         }
                       ],
                       "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"chart\": {\n      \"caption\": \"Sales Report\",\n      \"xAxisName\": \"Product Line\",\n      \"yAxisName\": \"Revenue($)\",\n      \"theme\": \"fusion\"\n    },\n    \"data\": [\n      {\n        \"label\": \"Product1\",\n        \"value\": 20000\n      },\n      {\n        \"label\": \"Product2\",\n        \"value\": 22000\n      },\n      {\n        \"label\": \"Product3\",\n        \"value\": 32000\n      }\n    ]\n  }\n}",
@@ -876,13 +954,13 @@
                       "parentColumnSpace": 16.3017578125,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 36,
+                      "leftColumn": 52,
                       "dynamicBindingPathList": [],
                       "labelStyle": "",
                       "isDisabled": false,
                       "key": "60ec204qip",
                       "isRequired": true,
-                      "rightColumn": 46,
+                      "rightColumn": 62,
                       "widgetId": "e0kulddki0",
                       "isVisible": true,
                       "label": "",
@@ -972,6 +1050,14 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "GitNews_aws_instance_constraints",
+              "name": "aws_instance_constraints",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "GitNews_aws_instance_prefixes",
               "name": "aws_instance_prefixes",
               "confirmBeforeExecute": false,
@@ -1018,6 +1104,7 @@
           "Canvas4",
           "Dashboard_Content",
           "InstanceTypes",
+          "InstanceTypesCopy",
           "Instance_Data_Chart",
           "MainContainer",
           "PriceSelect",
@@ -1029,6 +1116,7 @@
           "dd_since",
           "geai_logo",
           "gitnews_btn",
+          "instance_constraints_dd_multi",
           "instance_prefixed_dd_multi",
           "instance_regions_dd_multi",
           "repoResponseTable",

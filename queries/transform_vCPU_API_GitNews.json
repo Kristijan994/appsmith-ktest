@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\t\tlet inst_prefix_data = [gex_aws_instance_prefix.data];\n\t\t\tconst $transformed_data = [];\n\t\t\tvar response = inst_prefix_data.map((instance_item) => (\n        Object.keys(instance_item).map((i) => (\n            $transformed_data.push(\n\t\t\t\t\t\t\t{ \n\t\t\t\t\t\t\t\t\"x\": instance_item[`${i}`].instance_type,\n\t\t\t\t\t\t\t\t\"y\": instance_item[`${i}`].vcpu\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t)\n        ))\n    ));\n\t\t\t\n\t\t\treturn $transformed_data;\n\t\t}",
+      "body": "() => {\n\t\t\tlet inst_prefix_data = [gex_aws_instance_prefix.data];\n\t\t\tconst $transformed_data = [];\n\t\t\tvar response = inst_prefix_data.map((instance_item) => (\n        Object.keys(instance_item).map((i) => (\n\t\t\t\t\tinstance_constraints_dd_multi.selectedOptionValues.indexOf(instance_item[`${i}`].instance_type) ?\n            $transformed_data.push(\n\t\t\t\t\t\t\t{ \n\t\t\t\t\t\t\t\t\"x\": instance_item[`${i}`].instance_type,\n\t\t\t\t\t\t\t\t\"y\": instance_item[`${i}`].vcpu\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t)\n\t\t\t\t\t: null\n        ))\n    ));\n\t\t\t\n\t\t\treturn $transformed_data;\n\t\t}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\t\tlet inst_prefix_data = [gex_aws_instance_prefix.data];\n\t\t\tconst $transformed_data = [];\n\t\t\tvar response = inst_prefix_data.map((instance_item) => (\n        Object.keys(instance_item).map((i) => (\n            $transformed_data.push(\n\t\t\t\t\t\t\t{ \n\t\t\t\t\t\t\t\t\"x\": instance_item[`${i}`].instance_type,\n\t\t\t\t\t\t\t\t\"y\": instance_item[`${i}`].vcpu\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t)\n        ))\n    ));\n\t\t\t\n\t\t\treturn $transformed_data;\n\t\t}"
+      "() => {\n\t\t\tlet inst_prefix_data = [gex_aws_instance_prefix.data];\n\t\t\tconst $transformed_data = [];\n\t\t\tvar response = inst_prefix_data.map((instance_item) => (\n        Object.keys(instance_item).map((i) => (\n\t\t\t\t\tinstance_constraints_dd_multi.selectedOptionValues.indexOf(instance_item[`${i}`].instance_type) ?\n            $transformed_data.push(\n\t\t\t\t\t\t\t{ \n\t\t\t\t\t\t\t\t\"x\": instance_item[`${i}`].instance_type,\n\t\t\t\t\t\t\t\t\"y\": instance_item[`${i}`].vcpu\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t)\n\t\t\t\t\t: null\n        ))\n    ));\n\t\t\t\n\t\t\treturn $transformed_data;\n\t\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

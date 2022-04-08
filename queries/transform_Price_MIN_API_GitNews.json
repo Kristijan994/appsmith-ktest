@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\t\t\tlet inst_prefix_data = [gex_aws_instance_prefix.data];\n\t\t\t\tconst $transformed_data = [];\n\t\t\t\tvar response = inst_prefix_data.map((instance_item) => (\n\t\t\t\t\tObject.keys(instance_item).map((i) => (\n\t\t\t\t\t\t\t$transformed_data.push(\n\t\t\t\t\t\t\t\t{ \n\t\t\t\t\t\t\t\t\t\"x\": instance_item[`${i}`].instance_type,\n\t\t\t\t\t\t\t\t\t\"y\": instance_item[`${i}`].prices['us-east-1'].spot_min.toFixed(4)\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t)\n\t\t\t\t\t))\n\t\t\t));\n\n\t\t\t\treturn $transformed_data;\n\t\t\t}",
+      "body": "() => {\n\t\t\t\tlet inst_prefix_data = [gex_aws_instance_prefix.data];\n\t\t\t\tconst $transformed_data = [];\n\t\t\t\tvar response = inst_prefix_data.map((instance_item) => (\n\t\t\t\t\tObject.keys(instance_item).map((i) => (\n\t\t\t\t\t\tinstance_constraints_dd_multi.selectedOptionValues.indexOf(instance_item[`${i}`].instance_type) ?\n\t\t\t\t\t\t\t$transformed_data.push(\n\t\t\t\t\t\t\t\t{ \n\t\t\t\t\t\t\t\t\t\"x\": instance_item[`${i}`].instance_type,\n\t\t\t\t\t\t\t\t\t\"y\": instance_item[`${i}`].prices['us-east-1'].spot_min.toFixed(4)\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t: null\n\t\t\t\t\t))\n\t\t\t));\n\n\t\t\t\treturn $transformed_data;\n\t\t\t}",
       "jsArguments": [],
       "isAsync": false
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\t\t\tlet inst_prefix_data = [gex_aws_instance_prefix.data];\n\t\t\t\tconst $transformed_data = [];\n\t\t\t\tvar response = inst_prefix_data.map((instance_item) => (\n\t\t\t\t\tObject.keys(instance_item).map((i) => (\n\t\t\t\t\t\t\t$transformed_data.push(\n\t\t\t\t\t\t\t\t{ \n\t\t\t\t\t\t\t\t\t\"x\": instance_item[`${i}`].instance_type,\n\t\t\t\t\t\t\t\t\t\"y\": instance_item[`${i}`].prices['us-east-1'].spot_min.toFixed(4)\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t)\n\t\t\t\t\t))\n\t\t\t));\n\n\t\t\t\treturn $transformed_data;\n\t\t\t}"
+      "() => {\n\t\t\t\tlet inst_prefix_data = [gex_aws_instance_prefix.data];\n\t\t\t\tconst $transformed_data = [];\n\t\t\t\tvar response = inst_prefix_data.map((instance_item) => (\n\t\t\t\t\tObject.keys(instance_item).map((i) => (\n\t\t\t\t\t\tinstance_constraints_dd_multi.selectedOptionValues.indexOf(instance_item[`${i}`].instance_type) ?\n\t\t\t\t\t\t\t$transformed_data.push(\n\t\t\t\t\t\t\t\t{ \n\t\t\t\t\t\t\t\t\t\"x\": instance_item[`${i}`].instance_type,\n\t\t\t\t\t\t\t\t\t\"y\": instance_item[`${i}`].prices['us-east-1'].spot_min.toFixed(4)\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t)\n\t\t\t\t\t\t: null\n\t\t\t\t\t))\n\t\t\t));\n\n\t\t\t\treturn $transformed_data;\n\t\t\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

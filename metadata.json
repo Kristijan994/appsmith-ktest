@@ -13,6 +13,10 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
+    "GitNews_aws_instance_constraints": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "GitNews_aws_instance_prefixes": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
@@ -34,6 +38,14 @@
       "publishedUserSetOnLoad": false
     },
     "GitNews_gitnews_api": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "GitNews_transformHandlers.my_test": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "GitNews_transformHandlers.transform_Interruption_Rate_API": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
